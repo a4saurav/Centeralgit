@@ -4,6 +4,9 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello world"  
+      - name: install nginx 
+        run: apt-get install nginx
+        run: systemctl start nginx
+
 
 
