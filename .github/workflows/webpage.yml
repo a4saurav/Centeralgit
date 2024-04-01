@@ -1,0 +1,9 @@
+name: my-web-page
+on: workflow_dispatch
+jobs:
+    Deploying-web-page:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Building webpage
+          uses: action/checkout@v3
+          
