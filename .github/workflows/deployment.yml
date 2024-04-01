@@ -1,5 +1,21 @@
 
 name: deployment
-on: 
-  workflow_dispatch
+on: workflow_dispatch
+jobs:
+  Buiding:
+    runs-on: ubuntu-latest
+    steps:
+      - name: building package
+        run: echo "Building package"
+  testing:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: testing package
+        run: echo "testing package"
+  depoying:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploying package
+        run: echo "deploying package"      
+
 
