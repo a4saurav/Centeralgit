@@ -1,0 +1,5 @@
+
+name: deployment
+on: 
+  workflow_dispatch
+
